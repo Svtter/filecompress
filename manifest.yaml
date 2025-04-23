@@ -1,0 +1,39 @@
+version: 0.0.1
+type: plugin
+author: svtter
+name: filecompress
+label:
+  en_US: filecompress
+  ja_JP: filecompress
+  zh_Hans: 文件压缩器
+  pt_BR: filecompress
+description:
+  en_US: a tool to compress files
+  ja_JP: a tool to compress files
+  zh_Hans: a tool to compress files
+  pt_BR: a tool to compress files
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/filecompress.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 1.2.0
+created_at: 2025-04-23T16:54:15.825656296+08:00
+privacy: PRIVACY.md
+verified: false

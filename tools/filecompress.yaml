@@ -1,0 +1,41 @@
+identity:
+  name: filecompress
+  author: svtter
+  label:
+    en_US: filecompress
+    zh_Hans: filecompress
+    pt_BR: filecompress
+description:
+  human:
+    en_US: a tool to compress files
+    zh_Hans: a tool to compress files
+    pt_BR: a tool to compress files
+  llm: a tool to compress files
+parameters:
+  - name: filename
+    type: string
+    required: false
+    label:
+      en_US: filename
+      zh_Hans: 文件名
+    human_description:
+      en_US: ZipFile name
+      zh_Hans: 压缩后的文件名
+    llm_description: filename of zip file
+    form: llm
+  - name: compressFile
+    type: files
+    required: true
+    label:
+      en_US: compressFile
+      zh_Hans: 压缩文件列表
+      pt_BR: files to compress
+    human_description:
+      en_US: files to compress
+      zh_Hans: 需要压缩的文件
+      pt_BR: A tool to compress files
+    llm_description: a tool to compress files
+    form: llm
+extra:
+  python:
+    source: tools/filecompress.py

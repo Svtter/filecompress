@@ -1,0 +1,17 @@
+identity:
+  author: svtter
+  name: filecompress
+  label:
+    en_US: filecompress
+    zh_Hans: filecompress
+    pt_BR: filecompress
+  description:
+    en_US: a tool to compress files
+    zh_Hans: a tool to compress files
+    pt_BR: a tool to compress files
+  icon: icon.svg
+tools:
+  - tools/filecompress.yaml
+extra:
+  python:
+    source: provider/filecompress.py
